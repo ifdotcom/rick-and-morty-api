@@ -1,0 +1,75 @@
+/*
+1.Posicionamiento
+2.Modelo de caja(box-model)
+3.Tipografia
+4.Visual
+5.Otros
+*/
+
+:root {
+  /* font */
+
+  --ff-p: "Paytone One", sans-serif;
+
+  /* colors */
+  --green-search: #84b769;
+  --purple-bckg: #7a6099;
+  --yellow-border: #faf174;
+  --yellow-soft: #e3e0ae;
+  --white: #fbfbfb;
+  --blue-grd: #23276c;
+  ---cyan-grd: #46a1b5;
+  --peach-grd: #fbba99;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--ff-p);
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(16, 18, 60, 1) 0%,
+    rgba(82, 170, 179, 1) 46%,
+    rgba(251, 185, 155, 1) 81%
+  );
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > img {
+  width: 859px;
+  height: 263px;
+}
+
+.search {
+  width: 964px;
+  height: 86px;
+  background: rgba(132, 183, 105, 0.76);
+  border-radius: 70px;
+  border: none;
+  font-family: var(--ff-p);
+  font-size: 4rem;
+  color: #304669;
+  padding-left: 5rem;
+  position: absolute;
+  top: 228px;
+  z-index: 1;
+}
+
+.search:focus{
+    border: none;
+}
